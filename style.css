@@ -1,0 +1,155 @@
+html, body {
+  background-image: url(https://images.freecreatives.com/wp-content/uploads/2015/04/lavender-paper-texture.jpg);
+    height: 130%;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+.container{
+    height: 100%;
+    color: white;
+    display: grid;
+    grid-template-rows: 110px 1fr;
+    grid-template-columns: 1fr 100px;
+}
+.test{
+    grid-row-start: 2;
+}
+.title{
+    grid-row-start: 1;
+    font-size: 70px;
+    color: black;
+    align-items: end;
+    display: grid;
+    justify-items: center;
+}
+.box-main{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    margin-top: 40px;
+    gap: 40px;
+    grid-column-start: 1;
+}
+.card{
+    background-color: rgb(16, 26, 53);
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: repeat(5, 1fr);
+    border: solid 2px rgb(42, 104, 73);
+}
+.book-title{
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background-color: rgb(48, 158, 192);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    text-align: center;
+    align-items: center;
+    font-size: 24px;
+    color: black;
+}
+.book-author{
+    display: grid;
+    text-align: start;
+    font-size: 20px;
+    margin-left: 15px;
+    align-items: end;
+    color: white;
+}
+.book-pages{
+    display: grid;
+    text-align: start;
+    margin-left: 15px;
+    font-size: 20px;
+    align-items: end;
+}
+.book-status{
+    display: grid;
+    text-align: start;
+    margin-left: 15px;
+    font-size: 20px;
+    align-items: end;
+}
+/* Style for the modal overlay */
+dialog {
+    display: none;
+  }
+  
+  dialog[open] {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Style for the modal content */
+  dialog form {
+    background: white;
+    width: 80%;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Style for form elements */
+  dialog label,
+  dialog input[type="text"],
+  dialog input[type="number"],
+  dialog input[type="radio"] {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  
+  /* Style for the buttons */
+  dialog button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  /* Style for the Cancel button */
+  dialog #cancelBtn {
+    background-color: #ccc;
+  }
+  
+  /* Style for the output element */
+  output {
+    display: block;
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .readstatus{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    margin-right: 400px;
+  }
+
+  .dialogbtn{
+    grid-column-start: 2;
+    display: grid;
+    justify-items: center;
+    height: 25px;
+  }
+  img{
+    height: 50px;
+    width: 50px;
+  }
